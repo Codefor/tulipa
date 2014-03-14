@@ -3,10 +3,10 @@
 #
 #
 
-CC = ${JUMBO_ROOT}/opt/gcc46/bin/cc
-INCLUDE = -I/usr/local/include -I${JUMBO_ROOT}/include -I.
+CC = gcc
+INCLUDE = -I/usr/include -I/usr/local/include -I.
 BIN = 
-LIB = -L/usr/local/lib -L${JUMBO_ROOT}/lib -levent -levent_openssl -levent_pthreads -lpthread  -levhtp -lhiredis -lmysqlclient
+LIB = -L/usr/lib -L/usr/local/lib -levent -levent_openssl -levent_pthreads -lpthread  -levhtp -lhiredis -lmysqlclient
 
 CFLAGS = -D_GNU_SOURCE -Wall -g
 #CFLAGS = -Wall -g -pg
